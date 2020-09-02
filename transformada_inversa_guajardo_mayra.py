@@ -36,11 +36,11 @@ def metodo(xn,n):
         array_linear_regression3.append(x3)
 
     plt.title('Transformada Inversa')
-    plt.hist(array_linear_regression1, bins=50, alpha=1, edgecolor = 'white',  linewidth=1)
-    plt.hist(array_linear_regression2, bins=50, alpha=1, edgecolor = 'white',  linewidth=1)
-    plt.hist(array_linear_regression3, bins=50, alpha=1, edgecolor = 'white',  linewidth=1)
+    plt.scatter(array_linear_regression1, array)
+    plt.scatter(array_linear_regression2, array)
+    plt.scatter(array_linear_regression3, array)
     plt.grid(True)
     plt.show()
-    plt.clf()
+    
 
 metodo(xn,n)
